@@ -10,7 +10,8 @@ public class BaseTest {
 
     @BeforeClass
     public void setup () {
-        //Create a Chrome driver. All test classes use this.
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+    	//Create a Chrome driver. All test classes use this.
         driver = new ChromeDriver();
 
         //Maximize Window
